@@ -18,7 +18,7 @@ pipeline {
 
         stage ('Deployment Stage') {
           steps {
-            echo "Hello World Thrice"
+            echo 'Hello World Thrice'
                 
            }
         }

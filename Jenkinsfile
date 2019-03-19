@@ -11,7 +11,7 @@ pipeline {
         
         stage ('Testing Stage') {
           steps {
-            echo "Hello World Twice" 
+            echo 'Hello World Twice' 
                     sh 'python test.py'
                 }
             }
@@ -19,8 +19,8 @@ pipeline {
         stage ('Deployment Stage') {
           steps {
             echo 'Hello World Thrice'
-                
-           }
+		    sh 'python final.py'
+            }
         }
     }
 }
